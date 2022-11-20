@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054382B2B79FFA38B9405664 /* Pods_NizekTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43644513BB1C546D19493BB /* Pods_NizekTestTests.framework */; };
+		A8CDEE810B524367681439E2 /* Pods_NizekTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C7707778F65F8AF86A7631 /* Pods_NizekTest.framework */; };
+		A90B0EEF003CDE31B27DDE35 /* Pods_NizekTest_NizekTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB150B7C8EF6D8CE5F75281 /* Pods_NizekTest_NizekTestUITests.framework */; };
 		FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D58292A2559003649D8 /* AppDelegate.swift */; };
 		FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D5A292A2559003649D8 /* SceneDelegate.swift */; };
 		FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D5C292A2559003649D8 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 		FACC6D70292A255A003649D8 /* NizekTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D6F292A255A003649D8 /* NizekTestTests.swift */; };
 		FACC6D7A292A255A003649D8 /* NizekTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D79292A255A003649D8 /* NizekTestUITests.swift */; };
 		FACC6D7C292A255A003649D8 /* NizekTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D7B292A255A003649D8 /* NizekTestUITestsLaunchTests.swift */; };
+		FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D88292A26B3003649D8 /* MainCoordinator.swift */; };
+		FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8A292A2702003649D8 /* SignUpViewController.swift */; };
+		FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8C292A274C003649D8 /* SignUpView.swift */; };
+		FACC6D92292A2951003649D8 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D91292A2951003649D8 /* AppButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FB150B7C8EF6D8CE5F75281 /* Pods_NizekTest_NizekTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NizekTest_NizekTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2873D2FB011F3BA1D320582E /* Pods-NizekTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest.release.xcconfig"; path = "Target Support Files/Pods-NizekTest/Pods-NizekTest.release.xcconfig"; sourceTree = "<group>"; };
+		6D82812CAEA6793ED2AACF81 /* Pods-NizekTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTestTests.debug.xcconfig"; path = "Target Support Files/Pods-NizekTestTests/Pods-NizekTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43644513BB1C546D19493BB /* Pods_NizekTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NizekTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C7707778F65F8AF86A7631 /* Pods_NizekTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NizekTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA50D7EF914946311D4974FC /* Pods-NizekTest-NizekTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest-NizekTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC37C26BE6EC41701DFDB28 /* Pods-NizekTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest.debug.xcconfig"; path = "Target Support Files/Pods-NizekTest/Pods-NizekTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTestTests.release.xcconfig"; path = "Target Support Files/Pods-NizekTestTests/Pods-NizekTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D620F8D49403C9AFE773C75B /* Pods-NizekTest-NizekTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest-NizekTestUITests.release.xcconfig"; path = "Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FACC6D55292A2559003649D8 /* NizekTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NizekTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC6D58292A2559003649D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACC6D5A292A2559003649D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,10 @@
 		FACC6D75292A255A003649D8 /* NizekTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NizekTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC6D79292A255A003649D8 /* NizekTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NizekTestUITests.swift; sourceTree = "<group>"; };
 		FACC6D7B292A255A003649D8 /* NizekTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NizekTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FACC6D88292A26B3003649D8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FACC6D8A292A2702003649D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FACC6D8C292A274C003649D8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FACC6D91292A2951003649D8 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CDEE810B524367681439E2 /* Pods_NizekTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054382B2B79FFA38B9405664 /* Pods_NizekTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90B0EEF003CDE31B27DDE35 /* Pods_NizekTest_NizekTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B381AC4CCB3B4A700375AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C7707778F65F8AF86A7631 /* Pods_NizekTest.framework */,
+				1FB150B7C8EF6D8CE5F75281 /* Pods_NizekTest_NizekTestUITests.framework */,
+				A43644513BB1C546D19493BB /* Pods_NizekTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7BDCD24CB7207507FE861C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC37C26BE6EC41701DFDB28 /* Pods-NizekTest.debug.xcconfig */,
+				2873D2FB011F3BA1D320582E /* Pods-NizekTest.release.xcconfig */,
+				BA50D7EF914946311D4974FC /* Pods-NizekTest-NizekTestUITests.debug.xcconfig */,
+				D620F8D49403C9AFE773C75B /* Pods-NizekTest-NizekTestUITests.release.xcconfig */,
+				6D82812CAEA6793ED2AACF81 /* Pods-NizekTestTests.debug.xcconfig */,
+				C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FACC6D4C292A2559003649D8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				FACC6D6E292A255A003649D8 /* NizekTestTests */,
 				FACC6D78292A255A003649D8 /* NizekTestUITests */,
 				FACC6D56292A2559003649D8 /* Products */,
+				F7BDCD24CB7207507FE861C9 /* Pods */,
+				2B381AC4CCB3B4A700375AEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +147,8 @@
 		FACC6D57292A2559003649D8 /* NizekTest */ = {
 			isa = PBXGroup;
 			children = (
+				FACC6D8F292A28F3003649D8 /* core */,
+				FACC6D8E292A28EC003649D8 /* features */,
 				FACC6D58292A2559003649D8 /* AppDelegate.swift */,
 				FACC6D5A292A2559003649D8 /* SceneDelegate.swift */,
 				FACC6D5C292A2559003649D8 /* ViewController.swift */,
@@ -127,6 +177,32 @@
 			path = NizekTestUITests;
 			sourceTree = "<group>";
 		};
+		FACC6D8E292A28EC003649D8 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				FACC6D8A292A2702003649D8 /* SignUpViewController.swift */,
+				FACC6D8C292A274C003649D8 /* SignUpView.swift */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		FACC6D8F292A28F3003649D8 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FACC6D90292A293A003649D8 /* components */,
+				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		FACC6D90292A293A003649D8 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				FACC6D91292A2951003649D8 /* AppButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACC6D7F292A255A003649D8 /* Build configuration list for PBXNativeTarget "NizekTest" */;
 			buildPhases = (
+				7DE0FC92B7700AB99F0DD568 /* [CP] Check Pods Manifest.lock */,
 				FACC6D51292A2559003649D8 /* Sources */,
 				FACC6D52292A2559003649D8 /* Frameworks */,
 				FACC6D53292A2559003649D8 /* Resources */,
+				79615FB6196DA206C098EC07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACC6D82292A255A003649D8 /* Build configuration list for PBXNativeTarget "NizekTestTests" */;
 			buildPhases = (
+				7D47D627E1B0BF481C78CECF /* [CP] Check Pods Manifest.lock */,
 				FACC6D67292A255A003649D8 /* Sources */,
 				FACC6D68292A255A003649D8 /* Frameworks */,
 				FACC6D69292A255A003649D8 /* Resources */,
@@ -169,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACC6D85292A255A003649D8 /* Build configuration list for PBXNativeTarget "NizekTestUITests" */;
 			buildPhases = (
+				845DC0F8AB59FFE9FCB6129A /* [CP] Check Pods Manifest.lock */,
 				FACC6D71292A255A003649D8 /* Sources */,
 				FACC6D72292A255A003649D8 /* Frameworks */,
 				FACC6D73292A255A003649D8 /* Resources */,
+				D76B8680F41C6515114FB20D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +334,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79615FB6196DA206C098EC07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NizekTest/Pods-NizekTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NizekTest/Pods-NizekTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NizekTest/Pods-NizekTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D47D627E1B0BF481C78CECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NizekTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE0FC92B7700AB99F0DD568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NizekTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845DC0F8AB59FFE9FCB6129A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NizekTest-NizekTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D76B8680F41C6515114FB20D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FACC6D51292A2559003649D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
+				FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
 				FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */,
+				FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */,
+				FACC6D92292A2951003649D8 /* AppButton.swift in Sources */,
+				FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +620,7 @@
 		};
 		FACC6D80292A255A003649D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC37C26BE6EC41701DFDB28 /* Pods-NizekTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +649,7 @@
 		};
 		FACC6D81292A255A003649D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2873D2FB011F3BA1D320582E /* Pods-NizekTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +678,7 @@
 		};
 		FACC6D83292A255A003649D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D82812CAEA6793ED2AACF81 /* Pods-NizekTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +699,7 @@
 		};
 		FACC6D84292A255A003649D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +720,7 @@
 		};
 		FACC6D86292A255A003649D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA50D7EF914946311D4974FC /* Pods-NizekTest-NizekTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +739,7 @@
 		};
 		FACC6D87292A255A003649D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D620F8D49403C9AFE773C75B /* Pods-NizekTest-NizekTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
