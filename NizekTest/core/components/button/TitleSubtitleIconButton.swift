@@ -1,29 +1,23 @@
 //
-//  AppButton.swift
+//  TitleSubtitleIcon.swift
 //  NizekTest
 //
-//  Created by behrooz azimifar on 20/11/2022.
+//  Created by behrooz azimifar on 21/11/2022.
 //
 
 import Foundation
 import UIKit
 
-class AppButton: UIButton {
+class TitleSubtitleIconButton: AppButtonGeneric {
     
     let titleText: String
     let subtitleText: String?
     let iconName: String?
     
-    @objc func handle() {
-        debugPrint("handleGesture")
-    }
-    
     private let primaryLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
     
@@ -31,8 +25,6 @@ class AppButton: UIButton {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 18, weight: .regular)
         return label
     }()
     
@@ -97,31 +89,25 @@ class AppButton: UIButton {
         self.icon.image = UIImage(systemName: self.iconName ?? "")
     }
     
+    override func getTitleStyle() -> AppGenericButtonLabelStyle {
+        return AppGenericButtonLabelStyle(font: .systemFont(ofSize: 20), color: .green)
+    }
+    
     private func initializeUI() {
+        
+        primaryLabel.font = getTitleStyle().font
+        primaryLabel.textColor = getTitleStyle().color
+        
+        secondaryLabel.font = getSubtitleStyle().font
+        secondaryLabel.textColor = getSubtitleStyle().color
         
         addSubview(horizontalStackView)
         
-        if (iconName != nil) {
-            horizontalStackView.addArrangedSubview(iconContainerView)
-        }
-        
+        horizontalStackView.addArrangedSubview(iconContainerView)
         horizontalStackView.addArrangedSubview(lablesStackView)
         lablesStackView.addArrangedSubview(primaryLabel)
-
-
-        if(iconName != nil) {
-            iconContainerView.addSubview(icon)            
-        }
-
-        if (subtitleText != nil) {
-            lablesStackView.addArrangedSubview(secondaryLabel)
-        }
-        
-        layer.cornerRadius = 8
-        layer.borderWidth = 1
-        
-        self.backgroundColor = .white
-        
+        iconContainerView.addSubview(icon)
+        lablesStackView.addArrangedSubview(secondaryLabel)
     }
     
 
@@ -130,56 +116,24 @@ class AppButton: UIButton {
             make.edges.equalToSuperview().inset(UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4))
         }
         
-        
         primaryLabel.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.centerX.equalToSuperview()
         }
         
-        
-        if(subtitleText != nil) {
-            secondaryLabel.snp.makeConstraints { make in
-                make.bottom.equalToSuperview()
-                make.centerX.equalToSuperview()
-            }
+        secondaryLabel.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
         
-        if (iconName != nil) {
-            icon.snp.makeConstraints { make in
-                make.width.height.equalTo(25)
-                make.center.equalToSuperview()
-            }
+        icon.snp.makeConstraints { make in
+            make.width.height.equalTo(25)
+            make.center.equalToSuperview()
         }
         
         iconContainerView.snp.makeConstraints { make in
             make.width.equalTo(40)
         }
         
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        
-        UIView.animate(withDuration: 0.3, delay: 0) {
-            self.transform = CGAffineTransform.identity
-        }
-        
-        super.touchesBegan(touches, with: event)
-    }
-}
-
-
-extension AppButton {
-    
-    static func makeButton(title: String, subtitle: String, iconName: String) -> AppButton {
-        return AppButton(frame: .zero, titleText: title, subtitleText: subtitle, iconName: iconName)
-    }
-    
-    static func makeButton(title: String, subtitle: String) -> AppButton {
-        return AppButton(frame: .zero, titleText: title, subtitleText: subtitle, iconName: nil)
-    }
-    
-    static func makeButton(title: String) -> AppButton {
-        return AppButton(frame: .zero, titleText: title, subtitleText: nil, iconName: nil)
     }
 }

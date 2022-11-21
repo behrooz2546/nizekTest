@@ -10,6 +10,10 @@
 		054382B2B79FFA38B9405664 /* Pods_NizekTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43644513BB1C546D19493BB /* Pods_NizekTestTests.framework */; };
 		A8CDEE810B524367681439E2 /* Pods_NizekTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C7707778F65F8AF86A7631 /* Pods_NizekTest.framework */; };
 		A90B0EEF003CDE31B27DDE35 /* Pods_NizekTest_NizekTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB150B7C8EF6D8CE5F75281 /* Pods_NizekTest_NizekTestUITests.framework */; };
+		FA965538292BFB670026C9A4 /* TitleSubtitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */; };
+		FA96553A292BFBE40026C9A4 /* TitleSubtitleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA965539292BFBE40026C9A4 /* TitleSubtitleIconButton.swift */; };
+		FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96553C292BFC910026C9A4 /* TitleIconButton.swift */; };
+		FA96553F292BFDD60026C9A4 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96553E292BFDD60026C9A4 /* TitleButton.swift */; };
 		FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D58292A2559003649D8 /* AppDelegate.swift */; };
 		FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D5A292A2559003649D8 /* SceneDelegate.swift */; };
 		FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D5C292A2559003649D8 /* ViewController.swift */; };
@@ -22,7 +26,7 @@
 		FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D88292A26B3003649D8 /* MainCoordinator.swift */; };
 		FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8A292A2702003649D8 /* SignUpViewController.swift */; };
 		FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8C292A274C003649D8 /* SignUpView.swift */; };
-		FACC6D92292A2951003649D8 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D91292A2951003649D8 /* AppButton.swift */; };
+		FACC6D92292A2951003649D8 /* AppGenericButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D91292A2951003649D8 /* AppGenericButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		BEC37C26BE6EC41701DFDB28 /* Pods-NizekTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest.debug.xcconfig"; path = "Target Support Files/Pods-NizekTest/Pods-NizekTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTestTests.release.xcconfig"; path = "Target Support Files/Pods-NizekTestTests/Pods-NizekTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D620F8D49403C9AFE773C75B /* Pods-NizekTest-NizekTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest-NizekTestUITests.release.xcconfig"; path = "Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleButton.swift; sourceTree = "<group>"; };
+		FA965539292BFBE40026C9A4 /* TitleSubtitleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleIconButton.swift; sourceTree = "<group>"; };
+		FA96553C292BFC910026C9A4 /* TitleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleIconButton.swift; sourceTree = "<group>"; };
+		FA96553E292BFDD60026C9A4 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		FACC6D55292A2559003649D8 /* NizekTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NizekTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC6D58292A2559003649D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACC6D5A292A2559003649D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +76,7 @@
 		FACC6D88292A26B3003649D8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FACC6D8A292A2702003649D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FACC6D8C292A274C003649D8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		FACC6D91292A2951003649D8 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		FACC6D91292A2951003649D8 /* AppGenericButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenericButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,18 @@
 				C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA965536292BFB320026C9A4 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				FACC6D91292A2951003649D8 /* AppGenericButton.swift */,
+				FA965539292BFBE40026C9A4 /* TitleSubtitleIconButton.swift */,
+				FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */,
+				FA96553C292BFC910026C9A4 /* TitleIconButton.swift */,
+				FA96553E292BFDD60026C9A4 /* TitleButton.swift */,
+			);
+			path = button;
 			sourceTree = "<group>";
 		};
 		FACC6D4C292A2559003649D8 = {
@@ -198,7 +218,7 @@
 		FACC6D90292A293A003649D8 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				FACC6D91292A2951003649D8 /* AppButton.swift */,
+				FA965536292BFB320026C9A4 /* button */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -443,11 +463,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
+				FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */,
 				FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
+				FA96553F292BFDD60026C9A4 /* TitleButton.swift in Sources */,
 				FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */,
 				FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */,
-				FACC6D92292A2951003649D8 /* AppButton.swift in Sources */,
+				FACC6D92292A2951003649D8 /* AppGenericButton.swift in Sources */,
+				FA96553A292BFBE40026C9A4 /* TitleSubtitleIconButton.swift in Sources */,
+				FA965538292BFB670026C9A4 /* TitleSubtitleButton.swift in Sources */,
 				FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
