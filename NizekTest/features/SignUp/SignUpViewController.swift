@@ -24,6 +24,11 @@ class SignUpViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        
+        contentView.registerButton.addTarget(self, action: #selector(handlerButton), for: .touchUpInside)
+    }
+    
+    //MARK: - Actions
+    @objc func handlerButton() {
+        LoginViewController.show(navigationController: self.navigationController)
     }
 }

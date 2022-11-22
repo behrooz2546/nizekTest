@@ -11,6 +11,7 @@ target 'NizekTest' do
   pod 'RxCocoa', '6.5.0'
   pod 'Kingfisher', '~> 7.0'
   pod 'SnapKit', '~> 5.6.0'
+  pod 'IQKeyboardManagerSwift'
 
   target 'NizekTestTests' do
     inherit! :search_paths

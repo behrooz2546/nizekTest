@@ -1,15 +1,15 @@
 //
-//  SignUpView.swift
+//  TestView.swift
 //  NizekTest
 //
-//  Created by behrooz azimifar on 20/11/2022.
+//  Created by behrooz azimifar on 22/11/2022.
 //
 
 import Foundation
 import UIKit
 import SnapKit
 
-class SignUpView: UIView {
+class ButtonTestView: UIView {
     lazy var lablesStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.spacing = 8

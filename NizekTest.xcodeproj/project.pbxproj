@@ -27,6 +27,12 @@
 		FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8A292A2702003649D8 /* SignUpViewController.swift */; };
 		FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D8C292A274C003649D8 /* SignUpView.swift */; };
 		FACC6D92292A2951003649D8 /* AppGenericButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC6D91292A2951003649D8 /* AppGenericButton.swift */; };
+		FAE08EAD292CA2D900C5F404 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EAC292CA2D900C5F404 /* TestView.swift */; };
+		FAE08EB2292CA72100C5F404 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB1292CA72100C5F404 /* LoginViewController.swift */; };
+		FAE08EB4292CA74700C5F404 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB3292CA74700C5F404 /* LoginView.swift */; };
+		FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB5292CAB1300C5F404 /* HomeViewController.swift */; };
+		FAE08EB8292CAB5100C5F404 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB7292CAB5100C5F404 /* HomeView.swift */; };
+		FAE08EBB292CAD3200C5F404 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBA292CAD3200C5F404 /* Int.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,12 @@
 		FACC6D8A292A2702003649D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FACC6D8C292A274C003649D8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FACC6D91292A2951003649D8 /* AppGenericButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenericButton.swift; sourceTree = "<group>"; };
+		FAE08EAC292CA2D900C5F404 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		FAE08EB1292CA72100C5F404 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAE08EB3292CA74700C5F404 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FAE08EB5292CAB1300C5F404 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAE08EB7292CAB5100C5F404 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAE08EBA292CAD3200C5F404 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,7 @@
 				FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */,
 				FA96553C292BFC910026C9A4 /* TitleIconButton.swift */,
 				FA96553E292BFDD60026C9A4 /* TitleButton.swift */,
+				FAE08EAC292CA2D900C5F404 /* TestView.swift */,
 			);
 			path = button;
 			sourceTree = "<group>";
@@ -200,8 +213,9 @@
 		FACC6D8E292A28EC003649D8 /* features */ = {
 			isa = PBXGroup;
 			children = (
-				FACC6D8A292A2702003649D8 /* SignUpViewController.swift */,
-				FACC6D8C292A274C003649D8 /* SignUpView.swift */,
+				FAE08EB0292CA70000C5F404 /* Home */,
+				FAE08EAF292CA6F500C5F404 /* Login */,
+				FAE08EAE292CA6E100C5F404 /* SignUp */,
 			);
 			path = features;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 		FACC6D8F292A28F3003649D8 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				FAE08EB9292CAD2100C5F404 /* extensions */,
 				FACC6D90292A293A003649D8 /* components */,
 				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
 			);
@@ -221,6 +236,41 @@
 				FA965536292BFB320026C9A4 /* button */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		FAE08EAE292CA6E100C5F404 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FACC6D8A292A2702003649D8 /* SignUpViewController.swift */,
+				FACC6D8C292A274C003649D8 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FAE08EAF292CA6F500C5F404 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAE08EB1292CA72100C5F404 /* LoginViewController.swift */,
+				FAE08EB3292CA74700C5F404 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAE08EB0292CA70000C5F404 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAE08EB5292CAB1300C5F404 /* HomeViewController.swift */,
+				FAE08EB7292CAB5100C5F404 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAE08EB9292CAD2100C5F404 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAE08EBA292CAD3200C5F404 /* Int.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,16 +512,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE08EAD292CA2D900C5F404 /* TestView.swift in Sources */,
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
 				FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */,
 				FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
+				FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */,
+				FAE08EBB292CAD3200C5F404 /* Int.swift in Sources */,
 				FA96553F292BFDD60026C9A4 /* TitleButton.swift in Sources */,
 				FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */,
 				FACC6D8D292A274C003649D8 /* SignUpView.swift in Sources */,
+				FAE08EB4292CA74700C5F404 /* LoginView.swift in Sources */,
 				FACC6D92292A2951003649D8 /* AppGenericButton.swift in Sources */,
 				FA96553A292BFBE40026C9A4 /* TitleSubtitleIconButton.swift in Sources */,
 				FA965538292BFB670026C9A4 /* TitleSubtitleButton.swift in Sources */,
+				FAE08EB8292CAB5100C5F404 /* HomeView.swift in Sources */,
+				FAE08EB2292CA72100C5F404 /* LoginViewController.swift in Sources */,
 				FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
