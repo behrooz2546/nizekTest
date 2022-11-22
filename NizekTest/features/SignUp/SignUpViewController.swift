@@ -27,6 +27,8 @@ class SignUpViewController: UIViewController {
     override func loadView() {
         view = SignUpView()
         
+        
+        
         bindSuccessRegister()
     }
     

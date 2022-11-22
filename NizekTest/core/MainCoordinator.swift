@@ -24,6 +24,13 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
+        let isLogged = SharedPreferencesUtils.shared.isLogged()
+        if(isLogged) {
+            let homeVC = HomeViewController()
+            self.navigationController.pushViewController(homeVC, animated: true)
+            return
+        }
+        
         let vc = SignUpViewController()
         self.navigationController.pushViewController(vc, animated: false)
     }

@@ -23,14 +23,23 @@ class HomeViewController: UIViewController {
     
     override func loadView() {
         view = HomeView()
+        
+        contentView.logoutButton.addTarget(self, action: #selector(handleLogoutButtonTapped), for: .touchUpInside)
+        
+        let fullname = SharedPreferencesUtils.shared.getFullname()
+        contentView.fullnameLabel.text = "Welcome \(fullname ?? "")"
     }
     
-    override func viewDidLayoutSubviews() {
-        contentView.logoutButton.addTarget(self, action: #selector(handlerButton), for: .touchUpInside)
-    }
+    
     
     //MARK: - Actions
-    @objc func handlerButton() {
+    @objc func handleLogoutButtonTapped() {
         debugPrint("logoutButtonTapped")
+        
+        let navigationController = UINavigationController(rootViewController: SignUpViewController())
+        navigationController.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(navigationController, animated: true)
+        
+        SharedPreferencesUtils.shared.logout()
     }
 }

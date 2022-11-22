@@ -23,6 +23,7 @@ class SignUpViewModel {
     func createUser(fullName: String, username: String, password: String) {
         userRepository.createUser(fullName: fullName, username: username, password: password) {
             debugPrint("Success Create User")
+            SharedPreferencesUtils.shared.saveFullname(fullname: fullName)
             self.successRegister.accept(true)
         } onError: { error in
             debugPrint(error)

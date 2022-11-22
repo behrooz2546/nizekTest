@@ -36,6 +36,7 @@
 		FAE08EBD292CC0E800C5F404 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBC292CC0E800C5F404 /* SignUpViewModel.swift */; };
 		FAE08EC0292CC66700C5F404 /* UserCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBE292CC66700C5F404 /* UserCoreData.xcdatamodeld */; };
 		FAE08ECD292CE03200C5F404 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08ECC292CE03200C5F404 /* UserRepository.swift */; };
+		FAE08ECF292CF85600C5F404 /* SharedPreferencesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08ECE292CF85600C5F404 /* SharedPreferencesUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		FAE08EBC292CC0E800C5F404 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FAE08EBF292CC66700C5F404 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
 		FAE08ECC292CE03200C5F404 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		FAE08ECE292CF85600C5F404 /* SharedPreferencesUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPreferencesUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				FACC6D90292A293A003649D8 /* components */,
 				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
 				FAE08EBE292CC66700C5F404 /* UserCoreData.xcdatamodeld */,
+				FAE08ECE292CF85600C5F404 /* SharedPreferencesUtils.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
 				FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */,
 				FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */,
+				FAE08ECF292CF85600C5F404 /* SharedPreferencesUtils.swift in Sources */,
 				FAE08EBD292CC0E800C5F404 /* SignUpViewModel.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
 				FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */,
