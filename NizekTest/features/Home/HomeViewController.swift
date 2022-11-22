@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var forgroundTimer: Timer?
+    var durationForgroundActive: Double = 0.0
+
+    
     static func show(navigationController: UINavigationController?) {
         let vc = HomeViewController()
         let new = UINavigationController(rootViewController: vc)
@@ -23,11 +27,23 @@ class HomeViewController: UIViewController {
     
     override func loadView() {
         view = HomeView()
+    }
+    
+    override func viewDidLoad() {
+        debugPrint("viewDidLoad")
+        
+        forgroundTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireForgroundTimer), userInfo: nil, repeats: true)
+        durationForgroundActive = 0
         
         contentView.logoutButton.addTarget(self, action: #selector(handleLogoutButtonTapped), for: .touchUpInside)
         
         let fullname = SharedPreferencesUtils.shared.getFullname()
         contentView.fullnameLabel.text = "Welcome \(fullname ?? "")"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        debugPrint("viewWillAppear")
+        durationForgroundActive = 0
     }
     
     
@@ -41,5 +57,29 @@ class HomeViewController: UIViewController {
         self.navigationController?.present(navigationController, animated: true)
         
         SharedPreferencesUtils.shared.logout()
+    }
+    
+    @objc func fireForgroundTimer() {
+        durationForgroundActive += 1
+        debugPrint(durationForgroundActive)
+        if (durationForgroundActive > Constants.maxDurationForgroundActiveTime) {
+            // logout session
+            SharedPreferencesUtils.shared.logout()
+            
+            resetTimer()
+            invalidateTimer()
+            
+            // show Login View Controller
+            LoginViewController.show(navigationController: self.navigationController, push: false)
+        }
+    }
+    
+    func resetTimer() {
+        durationForgroundActive = 0
+        
+    }
+    
+    func invalidateTimer() {
+        forgroundTimer?.invalidate()
     }
 }

@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var enterBackgroundTime: Date?
     var enterForgroundTime: Date?
-
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -44,13 +44,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         debugPrint("sceneDidBecomeActive")
-        if let homeVC = topMostController() as? HomeViewController {
+        if let homeVC = topMostController as? HomeViewController {
+            homeVC.resetTimer()
             enterForgroundTime = Date.now
             
             if let enterBackgroundTime {
-                if(enterForgroundTime!.timeIntervalSince(enterBackgroundTime) > 10) {
+                if(enterForgroundTime!.timeIntervalSince(enterBackgroundTime) > Constants.maxBackgroundTime) {
                     SharedPreferencesUtils.shared.logout()
-                    showLoginVC(navigationController: homeVC.navigationController)
+                    homeVC.resetTimer()
+                    homeVC.invalidateTimer()
+                    LoginViewController.show(navigationController: homeVC.navigationController, push: false)
                 }
             }
             enterBackgroundTime = nil
@@ -74,36 +77,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
         debugPrint("sceneDidEnterBackground")
-        if let _ = topMostController() as? HomeViewController {
+        if let _ = topMostController as? HomeViewController {
             enterBackgroundTime = Date.now
         }
     }
     
-    private func showLoginVC(navigationController: UINavigationController?) {
-        let vc = LoginViewController()
-        let new = UINavigationController(rootViewController: vc)
-        new.modalPresentationStyle = .fullScreen
-        navigationController?.present(new, animated: true)
-    }
-    
-    private func topMostController() -> UIViewController? {
-        guard let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController else {
-            return nil
-        }
-
-        var topController = rootViewController
-
-        while let newTopController = topController.presentedViewController {
-            topController = newTopController
-        }
-        
-        if let navigationController = topController as? UINavigationController{
-            return navigationController.viewControllers.last
-        }
-
-        return topController
-    }
-
-
 }
 

@@ -15,9 +15,15 @@ class LoginViewController: UIViewController {
     let viewModel = LoginViewModel(userRepository: UserRepository())
     let disposebag = DisposeBag()
     
-    static func show(navigationController: UINavigationController?) {
+    static func show(navigationController: UINavigationController?, push: Bool = true) {
         let vc = LoginViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        if (push) {
+            navigationController?.pushViewController(vc, animated: true)
+            return
+        }
+        
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.present(vc, animated: true)
     }
     
     var contentView: LoginView {
