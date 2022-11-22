@@ -38,9 +38,11 @@ class LoginViewController: UIViewController {
     
     //MARK: - Binds
     func bindSuccessLogin() {
-        viewModel.successLogin.asObservable().subscribe { success in
+        viewModel.successLogin.asObservable().subscribe { [weak self] success in
             if (success) {
-                HomeViewController.show(navigationController: self.navigationController)
+                if let self {
+                    HomeViewController.show(navigationController: self.navigationController)
+                }
             }
             
         }
