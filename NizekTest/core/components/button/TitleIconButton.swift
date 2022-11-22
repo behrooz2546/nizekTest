@@ -17,8 +17,6 @@ class TitleIconButton: AppButtonGeneric {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
     
@@ -29,14 +27,11 @@ class TitleIconButton: AppButtonGeneric {
         stackView.distribution = .fill
         stackView.alignment = .center
         stackView.isUserInteractionEnabled = false
-        
-        
         return stackView
     }()
     
     lazy var iconContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
         return view
     }()
     
@@ -74,8 +69,8 @@ class TitleIconButton: AppButtonGeneric {
     
     private func initializeUI() {
         
-        primaryLabel.font = getTitleStyle().font
-        primaryLabel.textColor = getTitleStyle().color
+        primaryLabel.font = titleFont
+        primaryLabel.textColor = titleColor
         
         addSubview(horizontalStackView)
         

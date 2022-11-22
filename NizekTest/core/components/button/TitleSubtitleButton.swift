@@ -17,8 +17,6 @@ class TitleSubtitleButton: AppButtonGeneric {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
     
@@ -26,8 +24,6 @@ class TitleSubtitleButton: AppButtonGeneric {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 18, weight: .regular)
         return label
     }()
     
@@ -72,11 +68,11 @@ class TitleSubtitleButton: AppButtonGeneric {
     
     private func initializeUI() {
         
-        primaryLabel.font = getTitleStyle().font
-        primaryLabel.textColor = getTitleStyle().color
+        primaryLabel.font = titleFont
+        primaryLabel.textColor = titleColor
         
-        secondaryLabel.font = getSubtitleStyle().font
-        secondaryLabel.textColor = getSubtitleStyle().color
+        secondaryLabel.font = subtitleFont
+        secondaryLabel.textColor = subtitleColor
         
         addSubview(lablesStackView)
         lablesStackView.addArrangedSubview(primaryLabel)

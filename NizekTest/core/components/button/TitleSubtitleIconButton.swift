@@ -44,8 +44,6 @@ class TitleSubtitleIconButton: AppButtonGeneric {
         stackView.distribution = .fill
         stackView.alignment = .center
         stackView.isUserInteractionEnabled = false
-        
-        
         return stackView
     }()
     
@@ -56,7 +54,6 @@ class TitleSubtitleIconButton: AppButtonGeneric {
     
     lazy var icon: UIImageView = {
         let imageView = UIImageView()
-        
         return imageView
     }()
     
@@ -89,17 +86,13 @@ class TitleSubtitleIconButton: AppButtonGeneric {
         self.icon.image = UIImage(systemName: self.iconName ?? "")
     }
     
-    override func getTitleStyle() -> AppGenericButtonLabelStyle {
-        return AppGenericButtonLabelStyle(font: .systemFont(ofSize: 20), color: .green)
-    }
-    
     private func initializeUI() {
         
-        primaryLabel.font = getTitleStyle().font
-        primaryLabel.textColor = getTitleStyle().color
+        primaryLabel.font = titleFont
+        primaryLabel.textColor = titleColor
         
-        secondaryLabel.font = getSubtitleStyle().font
-        secondaryLabel.textColor = getSubtitleStyle().color
+        secondaryLabel.font = subtitleFont
+        secondaryLabel.textColor = subtitleColor
         
         addSubview(horizontalStackView)
         

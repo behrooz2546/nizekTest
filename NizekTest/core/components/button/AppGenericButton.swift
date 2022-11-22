@@ -10,6 +10,12 @@ import UIKit
 
 class AppButtonGeneric: UIButton {
     
+    var titleFont: UIFont? = .systemFont(ofSize: 18, weight: .bold)
+    var titleColor: UIColor? = .black
+    
+    var subtitleFont: UIFont? = .systemFont(ofSize: 14, weight: .semibold)
+    var subtitleColor: UIColor? = .gray
+    
     override init(frame: CGRect) {
         
         super.init(frame: frame)
@@ -31,24 +37,6 @@ class AppButtonGeneric: UIButton {
         }
         
         super.touchesBegan(touches, with: event)
-    }
-    
-    func getTitleStyle() -> AppGenericButtonLabelStyle {
-        return AppGenericButtonLabelStyle(font: .systemFont(ofSize: 18, weight: .bold), color: .black)
-    }
-    
-    func getSubtitleStyle() -> AppGenericButtonLabelStyle {
-        return AppGenericButtonLabelStyle(font: .systemFont(ofSize: 12, weight: .semibold), color: .black)
-    }
-}
-
-class AppGenericButtonLabelStyle {
-    let font: UIFont
-    let color: UIColor
-    
-    init(font: UIFont, color: UIColor) {
-        self.font = font
-        self.color = color
     }
 }
 
