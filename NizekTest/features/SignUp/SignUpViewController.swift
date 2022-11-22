@@ -30,6 +30,7 @@ class SignUpViewController: UIViewController {
         
         
         bindSuccessRegister()
+        bindAlreadySinguped()
     }
     
     override func viewDidLayoutSubviews() {
@@ -38,11 +39,12 @@ class SignUpViewController: UIViewController {
     
     //MARK: - Actions
     @objc func handlerButton() {
+        
         guard let fullnameText = contentView.fullNameTextField.text, !fullnameText.isEmpty else { return }
         guard let usernameText = contentView.usernameTextField.text, !usernameText.isEmpty else { return }
         guard let passwordText = contentView.passwordTextField.text, !passwordText.isEmpty else { return }
         
-        viewModel.createUser(fullName: fullnameText, username: usernameText, password: passwordText)
+        viewModel.signUp(fullName: fullnameText, username: usernameText, password: passwordText)
     }
     
     
@@ -51,6 +53,19 @@ class SignUpViewController: UIViewController {
         viewModel.successRegister.asObservable().subscribe { success in
             if (success) {
                 HomeViewController.show(navigationController: self.navigationController)
+            }
+            
+        }
+    }
+    
+    func bindAlreadySinguped() {
+        viewModel.alreadySignuped.asObservable().subscribe { signUped in
+            if (signUped) {
+                AlertUtils.displayAlert(vc: self, message: "Please Login") { [weak self] _ in
+                    if let self {
+                        LoginViewController.show(navigationController: self.navigationController)
+                    }
+                }
             }
             
         }

@@ -10,6 +10,8 @@
 		054382B2B79FFA38B9405664 /* Pods_NizekTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43644513BB1C546D19493BB /* Pods_NizekTestTests.framework */; };
 		A8CDEE810B524367681439E2 /* Pods_NizekTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C7707778F65F8AF86A7631 /* Pods_NizekTest.framework */; };
 		A90B0EEF003CDE31B27DDE35 /* Pods_NizekTest_NizekTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB150B7C8EF6D8CE5F75281 /* Pods_NizekTest_NizekTestUITests.framework */; };
+		FA951CFD292D205C00E35ED1 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA951CFC292D205C00E35ED1 /* AlertUtils.swift */; };
+		FA951CFF292D248800E35ED1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA951CFE292D248800E35ED1 /* LoginViewModel.swift */; };
 		FA965538292BFB670026C9A4 /* TitleSubtitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */; };
 		FA96553A292BFBE40026C9A4 /* TitleSubtitleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA965539292BFBE40026C9A4 /* TitleSubtitleIconButton.swift */; };
 		FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96553C292BFC910026C9A4 /* TitleIconButton.swift */; };
@@ -66,6 +68,8 @@
 		BEC37C26BE6EC41701DFDB28 /* Pods-NizekTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest.debug.xcconfig"; path = "Target Support Files/Pods-NizekTest/Pods-NizekTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C8D047EEA14F2501015C41C5 /* Pods-NizekTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTestTests.release.xcconfig"; path = "Target Support Files/Pods-NizekTestTests/Pods-NizekTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D620F8D49403C9AFE773C75B /* Pods-NizekTest-NizekTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NizekTest-NizekTestUITests.release.xcconfig"; path = "Target Support Files/Pods-NizekTest-NizekTestUITests/Pods-NizekTest-NizekTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA951CFC292D205C00E35ED1 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		FA951CFE292D248800E35ED1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FA965537292BFB670026C9A4 /* TitleSubtitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleButton.swift; sourceTree = "<group>"; };
 		FA965539292BFBE40026C9A4 /* TitleSubtitleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleIconButton.swift; sourceTree = "<group>"; };
 		FA96553C292BFC910026C9A4 /* TitleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleIconButton.swift; sourceTree = "<group>"; };
@@ -150,6 +154,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA951CFB292D204E00E35ED1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA951CFC292D205C00E35ED1 /* AlertUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		FA965536292BFB320026C9A4 /* button */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +243,7 @@
 		FACC6D8F292A28F3003649D8 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				FA951CFB292D204E00E35ED1 /* utils */,
 				FAE08EB9292CAD2100C5F404 /* extensions */,
 				FACC6D90292A293A003649D8 /* components */,
 				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
@@ -264,6 +277,7 @@
 			children = (
 				FAE08EB1292CA72100C5F404 /* LoginViewController.swift */,
 				FAE08EB3292CA74700C5F404 /* LoginView.swift */,
+				FA951CFE292D248800E35ED1 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -532,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA951CFF292D248800E35ED1 /* LoginViewModel.swift in Sources */,
 				FAE08EAD292CA2D900C5F404 /* TestView.swift in Sources */,
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
 				FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */,
@@ -540,6 +555,7 @@
 				FAE08EBD292CC0E800C5F404 /* SignUpViewModel.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
 				FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */,
+				FA951CFD292D205C00E35ED1 /* AlertUtils.swift in Sources */,
 				FAE08EBB292CAD3200C5F404 /* Int.swift in Sources */,
 				FA96553F292BFDD60026C9A4 /* TitleButton.swift in Sources */,
 				FACC6D5B292A2559003649D8 /* SceneDelegate.swift in Sources */,

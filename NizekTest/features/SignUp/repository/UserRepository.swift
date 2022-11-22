@@ -45,4 +45,24 @@ class UserRepository {
             onError(error.localizedDescription)
         }
     }
+    
+    func getUserWithUsername(
+        username: String,
+        onSuccess: @escaping (_: UserEntity?) -> Void,
+        onError: @escaping (_: String) -> Void
+    ) {
+        do {
+            let fetchRequest = UserEntity.fetchRequest()
+            let usernamePredicate = NSPredicate(format: "username LIKE %@", username)
+            fetchRequest.predicate = usernamePredicate
+            let users = try context.fetch(fetchRequest)
+            if (users.count > 0) {
+                onSuccess(users[0])
+            } else {
+                onSuccess(nil)
+            }
+        } catch (let error) {
+            onError(error.localizedDescription)
+        }
+    }
 }
