@@ -12,7 +12,9 @@ class HomeViewController: UIViewController {
     
     static func show(navigationController: UINavigationController?) {
         let vc = HomeViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let new = UINavigationController(rootViewController: vc)
+        new.modalPresentationStyle = .fullScreen
+        navigationController?.present(new, animated: true)
     }
     
     var contentView: HomeView {

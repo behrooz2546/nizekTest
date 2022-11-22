@@ -33,6 +33,9 @@
 		FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB5292CAB1300C5F404 /* HomeViewController.swift */; };
 		FAE08EB8292CAB5100C5F404 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EB7292CAB5100C5F404 /* HomeView.swift */; };
 		FAE08EBB292CAD3200C5F404 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBA292CAD3200C5F404 /* Int.swift */; };
+		FAE08EBD292CC0E800C5F404 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBC292CC0E800C5F404 /* SignUpViewModel.swift */; };
+		FAE08EC0292CC66700C5F404 /* UserCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE08EBE292CC66700C5F404 /* UserCoreData.xcdatamodeld */; };
+		FAE08ECD292CE03200C5F404 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE08ECC292CE03200C5F404 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		FAE08EB5292CAB1300C5F404 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAE08EB7292CAB5100C5F404 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAE08EBA292CAD3200C5F404 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		FAE08EBC292CC0E800C5F404 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FAE08EBF292CC66700C5F404 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		FAE08ECC292CE03200C5F404 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +232,7 @@
 				FAE08EB9292CAD2100C5F404 /* extensions */,
 				FACC6D90292A293A003649D8 /* components */,
 				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
+				FAE08EBE292CC66700C5F404 /* UserCoreData.xcdatamodeld */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -241,8 +248,10 @@
 		FAE08EAE292CA6E100C5F404 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				FAE08ECB292CE00500C5F404 /* repository */,
 				FACC6D8A292A2702003649D8 /* SignUpViewController.swift */,
 				FACC6D8C292A274C003649D8 /* SignUpView.swift */,
+				FAE08EBC292CC0E800C5F404 /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -271,6 +280,14 @@
 				FAE08EBA292CAD3200C5F404 /* Int.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		FAE08ECB292CE00500C5F404 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAE08ECC292CE03200C5F404 /* UserRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +533,7 @@
 				FACC6D5D292A2559003649D8 /* ViewController.swift in Sources */,
 				FA96553D292BFC910026C9A4 /* TitleIconButton.swift in Sources */,
 				FACC6D89292A26B3003649D8 /* MainCoordinator.swift in Sources */,
+				FAE08EBD292CC0E800C5F404 /* SignUpViewModel.swift in Sources */,
 				FACC6D59292A2559003649D8 /* AppDelegate.swift in Sources */,
 				FAE08EB6292CAB1300C5F404 /* HomeViewController.swift in Sources */,
 				FAE08EBB292CAD3200C5F404 /* Int.swift in Sources */,
@@ -529,6 +547,8 @@
 				FAE08EB8292CAB5100C5F404 /* HomeView.swift in Sources */,
 				FAE08EB2292CA72100C5F404 /* LoginViewController.swift in Sources */,
 				FACC6D8B292A2702003649D8 /* SignUpViewController.swift in Sources */,
+				FAE08ECD292CE03200C5F404 /* UserRepository.swift in Sources */,
+				FAE08EC0292CC66700C5F404 /* UserCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +896,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAE08EBE292CC66700C5F404 /* UserCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAE08EBF292CC66700C5F404 /* UserModel.xcdatamodel */,
+			);
+			currentVersion = FAE08EBF292CC66700C5F404 /* UserModel.xcdatamodel */;
+			path = UserCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FACC6D4D292A2559003649D8 /* Project object */;
 }

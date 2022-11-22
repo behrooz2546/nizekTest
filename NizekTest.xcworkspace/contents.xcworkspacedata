@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NizekTest/core/UserEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:NizekTest/core/UserEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:NizekTest.xcodeproj">
    </FileRef>
    <FileRef
