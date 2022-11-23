@@ -1,3 +1,3 @@
 # nizekTest
 
-MVVM + RxSwift + CoreData
+MVVM + RxSwift + CoreData + SnapKit
