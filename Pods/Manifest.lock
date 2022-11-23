@@ -16,6 +16,7 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
+  - Swinject (2.8.2)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 15.0)
   - RxCocoa (= 6.5.0)
   - SnapKit (~> 5.6.0)
+  - Swinject
 
 SPEC REPOS:
   trunk:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
@@ -45,7 +48,8 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
 
-PODFILE CHECKSUM: 162c5429d56bff5835ff0f04928f1c7adaa43d2f
+PODFILE CHECKSUM: a198a9f9fa35b90d014f25f6480c8398b3fe53ee
 
 COCOAPODS: 1.11.3
