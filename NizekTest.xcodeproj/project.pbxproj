@@ -231,6 +231,7 @@
 		FACC6D57292A2559003649D8 /* NizekTest */ = {
 			isa = PBXGroup;
 			children = (
+				FACC6D90292A293A003649D8 /* Components */,
 				FA6AB22D292DC6730017D1B8 /* Data */,
 				FA6AB22A292DBF1E0017D1B8 /* Domain */,
 				FA6AB227292DBD7D0017D1B8 /* DependencyContainer */,
@@ -278,7 +279,6 @@
 			children = (
 				FA951CFB292D204E00E35ED1 /* Utils */,
 				FAE08EB9292CAD2100C5F404 /* Extensions */,
-				FACC6D90292A293A003649D8 /* Components */,
 				FACC6D88292A26B3003649D8 /* MainCoordinator.swift */,
 				FAE08ECE292CF85600C5F404 /* SharedPreferencesUtils.swift */,
 				FA951D00292D544100E35ED1 /* Constants.swift */,
